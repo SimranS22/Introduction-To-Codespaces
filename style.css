@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    overflow: hidden;
+    /* Add background color */
+  }
+  .head{
+    padding: 5% 0 0 0;
+    text-align: center;
+    color:black;
+  }
+
+  .flip{
+    height: 80vh;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    /* Add a command to make the cards align in the same line and be responsive */
+  }
+  
+  .container {
+    width: 500px;
+    height: 270px;
+    perspective: 800px; 
+    margin: 20px;
+  }
+  
+  /*Add a section to make the card flip in X-direction*/
+
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 7px 4px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    /* background-image: url(https://source.unsplash.com/random/350x500); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .c1{
+    background-image: url(images/img1.png);
+   
+  }
+  .c2{
+    background-image: url(images/img2.png);
+  }
+  .back {
+    background-color: #1db9f1;
+    transform: rotateX(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+@media (max-width:1200px){
+    .container {
+        width: 500px;
+        height: 250px;
+        perspective: 800px;
+        margin: 20px;
+      }
+    
+}
+
+@media(max-width:990px){
+    .container {
+        width: 470px;
+        height: 220px;
+        perspective: 800px;
+        margin: 20px;
+      }
+}
+
+@media(max-width:768px){
+    .container {
+        width: 440px;
+        height: 200px;
+        perspective: 1000px;
+        margin: 20px;
+    }
+
+}
+
