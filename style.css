@@ -8,6 +8,7 @@
   body {
     height: 100vh;
     overflow: hidden;
+    background: linear-gradient(45deg,rgb(40, 40, 121),rgb(165, 165, 232));
     /* Add background color */
   }
   .head{
@@ -22,6 +23,8 @@
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     /* Add a command to make the cards align in the same line and be responsive */
   }
   
@@ -30,6 +33,11 @@
     height: 270px;
     perspective: 800px; 
     margin: 20px;
+  }
+
+  .container:hover > .card{
+    cursor:pointer;
+    transform: rotateX(180deg);
   }
   
   /*Add a section to make the card flip in X-direction*/
@@ -63,7 +71,7 @@
    
   }
   .c2{
-    background-image: url(images/img2.png);
+    background-image: url(images/img1.png);
   }
   .back {
     background-color: #1db9f1;
