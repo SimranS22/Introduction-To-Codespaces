@@ -2,7 +2,7 @@
 
 <img width="878" alt="Event Poster" src="https://user-images.githubusercontent.com/103310345/203977111-c5d3f903-6fee-49b7-9903-6669606649af.png">
 
-As a _Microsoft Learn Student Ambassador_, I had the opportunity to conduct a Hands-on Session/workshop on 21th Nov,2022 on <br>"**Github Universe Watch Party | Introduction To Codespaces**".
+As a _Microsoft Learn Student Ambassador_, I had the opportunity to conduct a Hands-on Session/workshop on 21th Nov,2022 on "**Github Universe Watch Party | Introduction To Codespaces**".
 
 ### Aim
 
